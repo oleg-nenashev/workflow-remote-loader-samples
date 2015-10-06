@@ -8,8 +8,9 @@ def version = '1.0'
 
 @NonCPS
 def dumpEnvVars() {
+  println "Dumping build environment variables..."
   for (Map.Entry<String, String> entry : currentBuild.build().environment) {
-    echo "${entry.key} = ${entry.value}"
+    println "    ${entry.key} = ${entry.value}"
   }
 }
 

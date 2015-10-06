@@ -5,7 +5,7 @@
 def version = '1.0'
 
 def printHello() {
-  echo "Hello, world!"
+  println "Hello, world!"
 }
 
 return this;
